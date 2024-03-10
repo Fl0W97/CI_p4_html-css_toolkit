@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    
+        <link rel="stylesheet" href="styles.css" />
+  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This webiste is about HTML&CSS essentials. It helps you to finde fast the relevant code section you need for your project. A project from a coding beginner for beginner">
+        <meta name="keywords" content="learn to code, coding challenge, html, css, developer">
+        <meta name="author" content="Florian Guldner">
+
+        <title>Developer's toolkit - HTML Essentials</title> 
+
+    </head>
+    <body>
+        <header>
+            <h1>HTML Essentials</h1>
+            <p>You will find here code snippets and templates you can reuse for your projects.</p>
+        </header>
+
+        <nav> <!-- nav needs to be fixed on the top with CSS -->
+            <div id="navigation">
+                <a href="#templates">Templates</a>
+                <a href="#snippets">Snippets</a>
+                <a href="#validation">Validation</a>
+                <a href="#author">Author</a>
+            </div>
+        </nav>
+
+        <section id="templates">
+            <h2>Templates</h2>
+            <div id="nav-templates">
+                <a href="#template1">Tempalte Semantic Web</a>
+                <a href="#template2">Template Quick & Dirty</a>
+                <a href="#template3">Template Classic</a>
+                <a href="#template4">Template Restaurant card</a>
+            </div>
+
+            <div id="template1">
+                <h3>Template Semantic web</h3>
+                <p></p>
+                <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/01-header.png" alt="" class="concept-img">
+
+                <div class="code_area">
+                    <nav>
+                        <a href="#section1">Section 1</a>
+                        <a href="#section2">Section 2</a>
+                        <a href="#section3">Section 3</a>
+                    </nav>
+
+                    <div id="section1">
+                        <h2>Section 1 content</h2>
+                        <p>The nav element represents a location on a page that links to other pages or to parts within a page. Common examples of navigation sections are menus, tables of contents, and indexes. A nav element is typically found near the top of every web page on a site, because this is where the user expects it to be.</p>
+                    </div>
+
+                    <div id="section2">
+                        <h2>Section 2 content</h2>
+                        <p>A web page can contain several nav elements. For example, one for site navigation and one for navigation of elements on the same page. Use of more than one nav element on the page is usually only necessary in complex ½websites with large amounts of information to structure.</p>
+                    </div>
+
+                    <div id="section3">
+                        <h2>Section 3 content</h2>
+                        <p>Note though that not all groups of links on a page need to be in a nav element - Only sections that consist of major navigation blocks are appropriate for the nav element. For example, a footer may contain a list of links that don't need to be in a nav element.</p> 
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="template2">
+                <h3>Template Quick & Dirty</h3>
+                <p>Use this template for easy test cases. It only contains a few basic elements.</p>
+
+                <div class="code_area"> 
+
+                    <!-- <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Document</title>
+                    </head>
+                    <body> 
+                        
+                    </body>
+                    </html> -->
+                </div>
+
+            </div>
+
+            <div id="template3">
+                <h3>Template Classic</h3>
+                <p>Use this template for small projects which you don't want to publish. It contians all relevant elements for a standard HTML page, however, it does not contain all latest HTML5 achievements. The structure is more simple.</p>
+
+                <div class="code_area"> 
+                    <!-- new input -->
+                </div>
+
+            </div>
+
+            <div id="template4">
+                <h3>Template Restaurant card</h3>
+                <p>Use this template to renew your product presentaion. It can be linked with an QR code and provides a simple overview about your menu/ product selection.</p>
+
+                <div class="code_area"> 
+                    <!-- new input -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="snippets">
+            <h2>Snippets</h2>
+            <div id="nav-snippets">
+                <a href="#snippet1">Lists and tables</a>
+                <a href="#snippet2">Media elements</a>
+                <a href="#snippet3">Forms</a>
+                <a href="#snippet4">Meta data (extension)</a>
+            </div>
+
+            <div id="snippet1">
+                <h3>Lists and tables</h3>
+                <p>An internal link is a link to an element within the same page.</p>
+                <br>
+                <div class="code_area">
+                    <!-- lists, ol, ul, nested ones --> 
+                </div>  
+                <br>
+                <div class="code_area">
+                    <!-- tables -->
+                </div> 
+            
+            </div>
+
+            <div id="snippet2">
+                <h3>Media elements</h3>
+                <p>Media - You find here snippets for images, audios and videos</p> 
+                <br>
+                <p>Add a <code>href</code> attribute and value to the <code>&lt;a&gt;</code> element that 
+                    relates to the <code>id</code> value of the element you want to link to.</p>
+                <br>
+
+                <div class="code_area">
+                <img src="brokenlink.png" alt="Here the image file is broken, so the text provided in the alt attribute is shown instead">
+                </div>
+
+                <div class="code_area">
+                    <picture>
+                    <source media="(max-width: 800px)" srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/jellyfish.png">
+                    <source media="(max-width: 900px)" srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunflower.png">
+                    <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/art.png" alt="Assorted images">
+                </picture>
+
+                <!-- <caption></caption> ? --> 
+                </div>
+
+                <div class="code_area"> 
+                    <video src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunset.mp4" width="500" controls autoplay muted>
+                    <p>Your browser doesn't support HTML5 video.</p>
+                    <a href="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunset.mp4">Link to the video.</a>
+                    </video>
+                </div> 
+            </div>
+
+            <div id="snippet3">
+                <h3>Forms</h3>
+                <p>forms, datalist, dropdown menu</p>
+                <br>
+
+                <div class="code_area">
+            
+                    <!-- form incl. HTTP POST requests -->
+                    <form action="https://formdump.codeinstitute.net" method="post">
+                        <input type="text" name="formdata">
+                    </form>
+                </div>  
+
+                <div class="code_area"> 
+
+                    <form action="" method="">
+                        <input type="text" name="username" placeholder="Enter your username" required>
+                        <input type="password" name="password" placeholder="Enter your password">
+                        <input type="submit" name="username" value="Submit">
+                    </form>
+                </div>
+
+                <div class="code_area">
+            
+                    <!-- form with labels code area should be highlighted-->
+                    <form>
+                        <label for="username">Username:</label>
+                        <input id="username" type="text">
+
+                        <label for="password">Password:</label>
+                        <input id="password" type="password">
+
+                        <input id="button" type="submit"> 
+
+                    </form>
+                </div>
+
+                <div class="code_area">
+            
+                    <!-- datalist with suggestions similar to Google search bar -->
+                    <form>
+                        <label for="fields-of-story">Select Field of Study:</label>
+                        <select name="fields-of-study" id="fields-of-study">
+                            <option value="math">Math</option>
+                            <option value="science">Science</option>              
+                            <option value="finance">Finance</option>
+                            <option value="history">History</option>
+                            <option value="languages">Languages</option>
+                        </select>
+                    </form>
+                </div
+            
+                    <!-- more input types here: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2/courseware/fcc67a894619420399970ae84fc4802f/643317b091da4eef98fe9e0812a71715/?child=first -->
+            
+            </div> 
+
+            <div id="snippet4">
+                <h3>Meta data (extension)</h3>
+                <p>Meta data...</p>
+                <br>
+
+                <div class="code_area">
+                    <!-- meta data attributes styles.css, javascript.js keywords... -->
+                </div>  
+
+            </div>
+        
+        </section>
+
+        <section id="validation">
+            <div>
+                <h2>Validation</h2>
+                <p>... is an important step. Here you find some useful links:</p>
+                <br>
+                <a href="https://jigsaw.w3.org/css-validator/">CSS-Validator</a>
+                <br>
+                <a href="https://validator.w3.org/">HTML-Validator<a/>
+            </div>
+        </section>
+
+        <section id="author">
+            <div>
+                <h2>Author</h2>
+                <img src="" alt="picture of the author">
+                <p>here some information about the author: project of CodeInstitute, gitHub account, </p>
+            </div>
+        </section>
+
+        <div id="footer">
+            © Guldner?!, 2024
+        </div>
+
+</body>
+<!-- open preview in browser: "python3 -m http.server". Stop control + C -->
+</html>
